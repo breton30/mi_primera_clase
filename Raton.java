@@ -12,10 +12,10 @@ public class Raton {
     public String getMarca() {
         return marca;
     }
-    public int getbotonesSinFuncionar() {
+    public int getBotonesSinFuncionar() {
         return botonesFuncionando;
     }
-    public boolean getconectado() {
+    public boolean getConectado() {
         return conectado;
     }
     public void setMarca (String marca){
@@ -31,5 +31,11 @@ public class Raton {
         else{
             conectado= true;
         }
+    }
+    public void estadoRaton() {
+        System.out.println("Marca Raton: " + marca + " Botones totales: " + totalBotones +  " Conectado al equipo: " + conectado);
+    }
+    public String getEstado() {
+        return marca + " " + totalBotones +" " + conectado;
     }
 }
